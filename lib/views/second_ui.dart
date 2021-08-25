@@ -10,7 +10,29 @@ class _SecondUIState extends State<SecondUI> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      appBar: AppBar(
+        backgroundColor: Colors.amberAccent,
+        title: Text(
+          'Second UI ^_^',
+        ),
+        centerTitle: true,
+        actions: [
+          IconButton(
+            onPressed: (){},
+            icon: Icon(
+              Icons.search,
+            ),
+          ),
+          IconButton(
+            onPressed: (){}, 
+          icon: Icon(
+            Icons.exit_to_app,
+            color: Colors.grey[850],
+          )
+          ),
+        ],
+      ),
+      drawer: Drawer(),
     );
   }
 }
